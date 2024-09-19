@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example HTML Validations</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <h1>Form HTML Validations</h1>
+    <form onsubmit="formValidation()"  id="registrationForm">
+        <label>Full Name</label>
+        <span class="error"  id="errorName"></span>
+        <input id="inputName" type="text" minlength="3" required>
+
+        <label>Email</label>
+        <span class="error"  id="errorEmail"></span>
+        <input id="inputEmail" type="email" required>
+
+        <label>Number of Tickets</label>
+        <span class="error"  id="errorTickets"></span>
+        <input id="inputTickets" type="number" min="1" max="10">
+
+        <label>Phone</label>
+        <span class="error"  id="errorPhone"></span>
+        <input id="inputPhone" type="tel" minlength="10" maxlength="10" required>
+
+        <button>Send</button>
+    
+    </form>
+
+
+    <h2>Report</h2>
+
+    <table id="outPutData">
+
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
